@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1 {
+  font-size: 24px;
+}
+img {
+  width: 15px;
+  padding-left: 4px;
+  margin-bottom: -2px;
+}
+img[alt^="light"] {
+  width: 25px;
+  margin-bottom: -7px;
+}
+.theme img {
+  padding-left: 10px;
+}
+.theme {
+  font-weight: 600;
+  font-size: 11px;
+  cursor: pointer;
+}
+.light h1 {
+  color: #32353c;
+}
+.light .theme span {
+  color: #b4bbc5;
+}
+.light .theme img {
+  filter: invert(0.6);
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 20px;
+  }
+}

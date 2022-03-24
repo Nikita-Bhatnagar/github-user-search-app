@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import classes from "./App.module.css";
+import Wrapper from "./containers/Wrapper";
+import { useState } from "react";
 function App() {
+  const [theme, setTheme] = useState("dark");
+  function changeThemeHandler() {
+    setTheme((prevState) => {
+      if (prevState === "dark") return "light";
+      else return "dark";
+    });
+  }
+  const containerClasses = `${classes.container} ${
+    theme === "light" ? classes.light : ""
+  }`;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={containerClasses}>
+      <Wrapper curTheme={theme} changeTheme={changeThemeHandler}></Wrapper>
     </div>
   );
 }
-
 export default App;

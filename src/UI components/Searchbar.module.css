@@ -1,0 +1,31 @@
+button {
+  background-color: #0278fd;
+  font-size: 12px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-family: "Space Mono", monospace;
+}
+input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: calc(100% - 110px);
+  padding: 0 10px;
+  color: #a0a8bb;
+}
+input::placeholder {
+  color: #a0a8bb;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Space Mono", monospace;
+}
+form {
+  display: inline;
+}
+.searchicon {
+  filter: invert(31%) sepia(91%) saturate(1847%) hue-rotate(198deg)
+    brightness(96%) contrast(107%);
+}

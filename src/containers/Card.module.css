@@ -1,0 +1,10 @@
+.card {
+  background-color: #1f2a48;
+  padding: 7px 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+.light.card {
+  background-color: #fefefe;
+  box-shadow: 0 6px 6px -1px #eceefd;
+}
